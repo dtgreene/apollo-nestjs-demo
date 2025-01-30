@@ -1,0 +1,37 @@
+type Animal {
+  name: String!
+}
+
+type AnimalsAndPokemonResponse {
+  animals: [Animal!]!
+  pokemon: [Pokemon!]!
+}
+
+scalar Date
+
+scalar JSONObject
+
+type Mutation {
+  do: Sample!
+}
+
+type Pokemon {
+  name: String!
+  url: String!
+}
+
+type Query {
+  animals: [Animal!]!
+  animalsAndPokemon: AnimalsAndPokemonResponse
+  pokemon: [Pokemon!]!
+  sample: Sample!
+}
+
+type Sample {
+  id: ID!
+  name: String!
+  now: Date!
+  test: String
+}
+
+scalar Upload

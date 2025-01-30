@@ -1,0 +1,18 @@
+scalar Date
+scalar JSONObject # https://github.com/taion/graphql-type-json
+scalar Upload
+
+type Sample {
+  id: ID!
+  name: String!
+  now: Date!
+  test: String
+}
+
+type Query {
+  sample: Sample!
+}
+
+type Mutation {
+  do: Sample!
+}
