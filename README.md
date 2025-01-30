@@ -1,4 +1,9 @@
+## Apollo NestJS Demo
 
-# Minimal NestJS + Apollo Server demo 
+Basic GraphQL demo using Apollo Server and NestJS showing data fetching between data sources.
 
-This project is a simple demo showing how to setup Apollo Server with NestJS
+To run:
+
+1. Clone the repo
+2. `npm install`
+3. `npm start`
